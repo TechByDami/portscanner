@@ -75,6 +75,7 @@ Choose (1/2/3): 3
 Enter port range (e.g. 1-1024): 1-120
 
   Scanning '142.250.129.101' ...
+```
 
 > On the terminal, the port number, state, and scan duration are printed in **green**.
 
