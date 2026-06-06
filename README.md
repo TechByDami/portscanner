@@ -86,13 +86,16 @@ Every scan is automatically appended to `scan_results.log` in the same directory
 Scan report for 142.250.129.101 (142.250.129.101)
 
 Scanned 120 port(s)
+========================================
 PORT     STATE    SERVICE
+========================================
 80       open     http
 
 Scan completed in 0.55 seconds
-Log saved to: /home/user/scan_results.log
-```
 
+Log saved to: /home/user/scan_results.log
+
+```
 To view the log:
 
 ```bash
