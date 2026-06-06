@@ -1,0 +1,13 @@
+
+Scan report for 192.168.1.1 (192.168.1.1)
+Scanned 1024 port(s)
+----------------------------------------
+PORT     STATE    SERVICE
+----------------------------------------
+53       open     dns
+80       open     http
+443      open     https
+----------------------------------------
+Scan completed in 0.40 seconds
+Log saved to: /home/cybertech/Projects/portscanner/scan_results.log
+
