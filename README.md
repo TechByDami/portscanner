@@ -2,8 +2,6 @@
 
 A simple, interactive TCP port scanner written in Python. Scan a target host for open ports, identify running services, and automatically save every result to a log file.
 
----
-
 ## Features
 
 - **Three scan modes** — single port, multiple ports, or a port range
@@ -11,24 +9,18 @@ A simple, interactive TCP port scanner written in Python. Scan a target host for
 - **Service detection** — identifies common services (HTTP, SSH, MySQL, etc.)
 - **Automatic logging** — every scan is saved to `scan_results.log` in plain text
 
----
-
 ## Requirements
 
 - Python 3.8 or higher
-
----
 
 ## Installation
 
 Clone or download the repository, then navigate into the project folder:
 
 ```bash
-git clone https://github.com/your-username/tcp-port-scanner.git
-cd tcp-port-scanner
+git clone https://github.com/TechByDami/portscanner.git
+cd portscanner
 ```
-
----
 
 ## Usage
 
@@ -64,8 +56,6 @@ Choose (1/2/3):
 | Multiple ports | `22,80,443,8080` |
 | Port range | `1-1024` |
 
----
-
 ## Sample Output
 
 ```
@@ -88,20 +78,17 @@ Enter port range (e.g. 1-1024): 1-120
 
 > On the terminal, the port number, state, and scan duration are printed in **green**.
 
----
-
 ## Log File
 
 Every scan is automatically appended to `scan_results.log` in the same directory. The log is written in plain text with no colour codes, making it easy to read, search, or share.
 
 ```
 Scan report for 142.250.129.101 (142.250.129.101)
+
 Scanned 120 port(s)
-----------------------------------------
 PORT     STATE    SERVICE
-----------------------------------------
 80       open     http
-----------------------------------------
+
 Scan completed in 0.55 seconds
 Log saved to: /home/user/scan_results.log
 ```
@@ -127,8 +114,6 @@ grep "open" scan_results.log
 3. Each worker opens a raw TCP socket and calls `connect_ex()`. A return code of `0` means the port is open; anything else means closed.
 4. Results are collected, sorted by port number, and only open ports are displayed.
 5. The full report is printed to the terminal and written to the log file simultaneously.
-
----
 
 ## Legal Disclaimer
 
